@@ -20,7 +20,7 @@ if __name__ == '__main__':
 			f.write(alpha[randgen(1,len(alpha))])
 		f.write('\n')	
 		
-
+#Com
 	
 
 
