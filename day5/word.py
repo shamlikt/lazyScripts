@@ -22,7 +22,6 @@ def game(word):
     error=0
     le = len(word)
     print " ua word is {}  10 Lives left".format("*"*len(word))
-    print word
     list2=[]
     
     for x in word:
@@ -51,12 +50,9 @@ def game(word):
         
             
     
+if __name__ == "__main__":
 
-
-wordlist=wordlist()
-
-word=select(wordlist)
-
-
-game(word)
+    wordlist=wordlist()
+    word=select(wordlist)
+    game(word)
 
