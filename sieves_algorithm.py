@@ -1,3 +1,5 @@
+import sys
+
 def prime(limit):
     list2=range(3,limit,2)
     prime=[];prime.append(2)
@@ -11,6 +13,5 @@ def prime(limit):
 
        
 
-
-
-print prime(1000)
+if __name__ == '__main__':
+    print prime(int(sys.argv[1]))
