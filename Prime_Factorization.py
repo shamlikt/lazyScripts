@@ -1,4 +1,4 @@
-
+#prime factorization using sieves algorithms
 
 def prime_gen(limit):
     list2=range(3,limit+1,2)
@@ -24,8 +24,9 @@ def fact_gen(number,primes):
    return factor
 
        
-         
-num=input()
-primes= prime_gen(num)
 
-print  fact_gen(num,primes)
+
+if __name__=='__main__':
+    number=input()
+    primes= prime_gen(number)
+    print  fact_gen(number,primes)
