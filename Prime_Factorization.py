@@ -1,15 +1,21 @@
 #prime factorization using sieves algorithms
 
+
 def prime_gen(limit):
-    list2=range(3,limit+1,2)
-    prime=[];prime.append(2)
-    while len(list2):
-        primeD=(list2.pop(0))
-        prime.append(primeD)
-        list2=[x for x in list2 if x-(x/primeD)*primeD]
+    limit=limit+1
+    noprime=[False]*limit
+    prime=[]
+    for i in range(2,limit):
+        if noprime[i]:
+            continue
+        else:
+            for y in range(i*2,limit,i):
+                noprime[y]=[True]
+            prime.append(i)
     return prime
 
 
+     
 def fact_gen(number,primes):
    factor=[]
    if number==primes.pop():
