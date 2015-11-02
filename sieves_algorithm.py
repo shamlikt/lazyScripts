@@ -1,6 +1,6 @@
 def prime(limit):
-    list2=range(2,limit)
-    prime=[]
+    list2=range(3,limit,2)
+    prime=[];prime.append(2)
     while len(list2):
         primeD=(list2.pop(0))
         prime.append(primeD)
@@ -8,6 +8,8 @@ def prime(limit):
     return prime
         
 
+
+       
 
 
 
