@@ -1,4 +1,4 @@
-''' This script print alpahbetic histogram of give word
+''' This script print alpahbetic histogram of given word
 '''
 import collections
 dic = collections.Counter(raw_input('Enter string: '))
